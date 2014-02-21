@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface MasterViewController : NSViewController
-
+@interface MasterViewController : NSViewController <NSTableViewDataSource,NSTableViewDelegate>
+@property NSArray * bugs;
 @end
