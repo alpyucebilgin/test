@@ -89,10 +89,10 @@
                 </scrollView>
             </subviews>
             <constraints>
-                <constraint firstItem="tyH-zJ-nST" firstAttribute="top" secondItem="1" secondAttribute="top" priority="1" constant="35" id="83k-3R-vqK"/>
-                <constraint firstItem="tyH-zJ-nST" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="Zss-hx-DFW"/>
-                <constraint firstItem="tyH-zJ-nST" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="qoD-yF-q4q"/>
-                <constraint firstItem="tyH-zJ-nST" firstAttribute="leading" secondItem="1" secondAttribute="leading" priority="1" constant="120" id="rcy-rf-Vni"/>
+                <constraint firstItem="tyH-zJ-nST" firstAttribute="top" secondItem="1" secondAttribute="top" constant="35" id="ER7-Jt-bJn"/>
+                <constraint firstItem="tyH-zJ-nST" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="XSj-Qn-bKl"/>
+                <constraint firstItem="tyH-zJ-nST" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="120" id="bBn-E2-EPx"/>
+                <constraint firstItem="tyH-zJ-nST" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="nkO-v7-kpO"/>
             </constraints>
         </customView>
     </objects>

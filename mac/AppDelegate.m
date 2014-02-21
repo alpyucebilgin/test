@@ -32,7 +32,17 @@
     // 2. Add the view controller to the Window's content view
     [self.window.contentView addSubview:self.masterViewController.view];
     self.masterViewController.view.frame = ((NSView*)self.window.contentView).bounds;
+    self.window.delegate = self;
     
+}
+
+- (NSSize)windowWillResize:(NSWindow *)sender toSize:(NSSize)frameSize
+{
+    NSRect rect;
+    rect.origin = ((NSView*)self.window.contentView).bounds.origin;
+    rect.size = frameSize;
+    self.masterViewController.view.frame = rect;
+    return frameSize;
 }
 
 @end
