@@ -9,5 +9,5 @@
 #import <Cocoa/Cocoa.h>
 
 @interface MasterViewController : NSViewController <NSTableViewDataSource,NSTableViewDelegate>
-@property NSArray * bugs;
+@property NSMutableArray * bugs;
 @end

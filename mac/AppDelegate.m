@@ -38,10 +38,7 @@
 
 - (NSSize)windowWillResize:(NSWindow *)sender toSize:(NSSize)frameSize
 {
-    NSRect rect;
-    rect.origin = ((NSView*)self.window.contentView).bounds.origin;
-    rect.size = frameSize;
-    self.masterViewController.view.frame = rect;
+    self.masterViewController.view.frame = ((NSView*)self.window.contentView).bounds;
     return frameSize;
 }
 
