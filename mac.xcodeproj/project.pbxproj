@@ -18,6 +18,8 @@
 		799B23CC18B6CB3300C6613C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799B23AB18B6CB3300C6613C /* Cocoa.framework */; };
 		799B23D418B6CB3300C6613C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 799B23D218B6CB3300C6613C /* InfoPlist.strings */; };
 		799B23D618B6CB3300C6613C /* macTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 799B23D518B6CB3300C6613C /* macTests.m */; };
+		799B23E218B6CB5100C6613C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 799B23E018B6CB5100C6613C /* MasterViewController.m */; };
+		799B23E318B6CB5100C6613C /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799B23E118B6CB5100C6613C /* MasterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		799B23D118B6CB3300C6613C /* macTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "macTests-Info.plist"; sourceTree = "<group>"; };
 		799B23D318B6CB3300C6613C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		799B23D518B6CB3300C6613C /* macTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = macTests.m; sourceTree = "<group>"; };
+		799B23DF18B6CB5100C6613C /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		799B23E018B6CB5100C6613C /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		799B23E118B6CB5100C6613C /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +120,8 @@
 		799B23B118B6CB3300C6613C /* mac */ = {
 			isa = PBXGroup;
 			children = (
-				799B23BD18B6CB3300C6613C /* AppDelegate.h */,
-				799B23BE18B6CB3300C6613C /* AppDelegate.m */,
-				799B23C018B6CB3300C6613C /* MainMenu.xib */,
-				799B23C318B6CB3300C6613C /* Images.xcassets */,
+				799B23E518B6D01B00C6613C /* Model */,
+				799B23E418B6CFFC00C6613C /* GUI */,
 				799B23B218B6CB3300C6613C /* Supporting Files */,
 			);
 			path = mac;
@@ -152,6 +155,27 @@
 				799B23D218B6CB3300C6613C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		799B23E418B6CFFC00C6613C /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				799B23BD18B6CB3300C6613C /* AppDelegate.h */,
+				799B23BE18B6CB3300C6613C /* AppDelegate.m */,
+				799B23C018B6CB3300C6613C /* MainMenu.xib */,
+				799B23C318B6CB3300C6613C /* Images.xcassets */,
+				799B23DF18B6CB5100C6613C /* MasterViewController.h */,
+				799B23E018B6CB5100C6613C /* MasterViewController.m */,
+				799B23E118B6CB5100C6613C /* MasterViewController.xib */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		799B23E518B6D01B00C6613C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799B23E318B6CB5100C6613C /* MasterViewController.xib in Resources */,
 				799B23B618B6CB3300C6613C /* InfoPlist.strings in Resources */,
 				799B23C418B6CB3300C6613C /* Images.xcassets in Resources */,
 				799B23BC18B6CB3300C6613C /* Credits.rtf in Resources */,
@@ -253,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				799B23BF18B6CB3300C6613C /* AppDelegate.m in Sources */,
+				799B23E218B6CB5100C6613C /* MasterViewController.m in Sources */,
 				799B23B818B6CB3300C6613C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
